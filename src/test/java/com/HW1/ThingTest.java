@@ -7,10 +7,17 @@ import static org.junit.Assert.assertEquals;
 
 public class ThingTest {
     @Test
-    public void shouldReturnNameOfThing(){
+    public void shouldReturnNameOfThingIfClassIsTypeOfThing(){
         String thingName = "ABC";
         Thing thing = new Thing(thingName);
         assertEquals(thingName, thing.toString());
+    }
+
+    @Test
+    public void shouldReturnNameOfThingAndClassNameIfClassIsNotTypeOfThing(){
+        String thingName = "ABC";
+        Tiger tiger = new Tiger("ABC");
+        assertEquals(thingName + " Tiger", tiger.toString());
     }
 }
 

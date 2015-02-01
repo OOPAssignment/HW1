@@ -8,6 +8,7 @@ public class Thing {
   }
 
   public String toString() {
-    return name;
+    String className = getClass().getSimpleName();
+    return className.equals(Thing.class.getSimpleName()) ? name : name + " " + className;
   }
 }
