@@ -11,7 +11,7 @@ public abstract class Creature extends Thing {
 
   public void eat(Thing thing) {
     this.thing = thing;
-    System.out.println(getClass().getSimpleName() + " has eaten a " + thing);
+    System.out.println(name + " has eaten a " + thing);
   }
 
   public abstract void move();
