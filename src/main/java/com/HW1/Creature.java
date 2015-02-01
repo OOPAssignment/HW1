@@ -9,7 +9,7 @@ public abstract class Creature extends Thing {
     this.name = name;
   }
 
-  public void eat(Thing thing) {
+  public void doEat(Thing thing) {
     this.thing = thing;
     System.out.println(name + " has eaten a " + thing);
   }

@@ -22,7 +22,7 @@ public class FlyTest extends BaseTest {
   public void shouldEatThingsOnly() {
     Thing thing = new Thing("thing 1");
     Fly fly = new Fly("Fly3");
-    fly.eat(thing);
+    fly.doEat(thing);
     assertEquals("Fly3 has eaten a thing 1", out.toString().trim());
   }
 
@@ -30,7 +30,7 @@ public class FlyTest extends BaseTest {
   public void shouldNotEatCreature() {
     Tiger tiger = new Tiger("Tiger 1");
     Fly fly = new Fly("Fly3");
-    fly.eat(tiger);
+    fly.doEat(tiger);
     assertEquals("Fly3 Fly won't eat a Tiger 1 Tiger", out.toString().trim());
   }
 }

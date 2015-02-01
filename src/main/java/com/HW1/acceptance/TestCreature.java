@@ -3,7 +3,6 @@ package com.HW1.acceptance;
 import com.HW1.*;
 
 import java.util.ArrayList;
-import java.util.stream.IntStream;
 
 public class TestCreature {
 
@@ -30,19 +29,19 @@ public class TestCreature {
     Tiger tiger = new Tiger("Creature 1");
     Ant ant = new Ant("Ant 1");
 
-    ant.eat(tiger);
-    ant.eat(thing);
+    ant.doEat(tiger);
+    ant.doEat(thing);
     ant.move();
 
     Fly fly = new Fly("Fly 1");
-    fly.eat(thing);
-    fly.eat(tiger);
+    fly.doEat(thing);
+    fly.doEat(tiger);
     fly.move();
 
     Bat bat = new Bat("Bat 1");
-    bat.eat(thing);
-    bat.eat(tiger);
-    bat.eat(ant);
+    bat.doEat(thing);
+    bat.doEat(tiger);
+    bat.doEat(ant);
     bat.move();
   }
 }

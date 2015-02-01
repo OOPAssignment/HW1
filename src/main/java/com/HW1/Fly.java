@@ -14,11 +14,11 @@ public class Fly extends Creature implements Flyer{
   }
 
   @Override
-  public void eat(Thing thing) {
+  public void doEat(Thing thing) {
     if (thing instanceof Creature)
       System.out.println(name + " " + getClass().getSimpleName() + " won't eat a " + thing);
     else
-      super.eat(thing);
+      super.doEat(thing);
   }
 
   @Override
