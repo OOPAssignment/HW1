@@ -1,0 +1,14 @@
+**/.idea/*
+bin/
+*.iml
+*.ipr
+*.iws
+*.log
+*.patch
+*.out
+out/
+target/*
+libs
+out
+*.log
+report/
