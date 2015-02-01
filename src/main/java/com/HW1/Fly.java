@@ -1,6 +1,6 @@
 package com.HW1;
 
-public class Fly extends Creature implements Flyer{
+public class Fly extends Creature implements Flyer, Eater {
   private String name;
 
   public Fly(String name) {
@@ -26,4 +26,13 @@ public class Fly extends Creature implements Flyer{
     System.out.println(name + " " + getClass().getSimpleName() + " is buzzing around in flight.");
   }
 
+  @Override
+  public void eat(Creature creature) {
+    System.out.println(name + " " + getClass().getSimpleName() + " won't eat a " + creature);
+  }
+
+  @Override
+  public void eat(Thing thing) {
+    super.doEat(thing);
+  }
 }

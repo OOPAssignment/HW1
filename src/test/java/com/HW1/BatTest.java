@@ -22,7 +22,7 @@ public class BatTest extends BaseTest {
   public void shouldNotEatThings() {
     Thing thing = new Thing("Thing1");
     Bat bat = new Bat("Bat1");
-    bat.doEat(thing);
+    bat.eat(thing);
     assertEquals("Bat1 Bat won't eat a Thing1", out.toString().trim());
   }
 
@@ -31,7 +31,7 @@ public class BatTest extends BaseTest {
   public void shouldEatCreatureOnly() {
     Tiger tiger = new Tiger("Tiger 1");
     Bat bat = new Bat("Bat1");
-    bat.doEat(tiger);
+    bat.eat(tiger);
     assertEquals("Bat1 has eaten a Tiger 1 Tiger", out.toString().trim());
   }
 }

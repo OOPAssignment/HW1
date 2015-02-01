@@ -34,14 +34,14 @@ public class TestCreature {
     ant.move();
 
     Fly fly = new Fly("Fly 1");
-    fly.doEat(thing);
-    fly.doEat(tiger);
+    fly.eat(thing);
+    fly.eat(tiger);
     fly.move();
 
     Bat bat = new Bat("Bat 1");
-    bat.doEat(thing);
-    bat.doEat(tiger);
-    bat.doEat(ant);
+    bat.eat(thing);
+    bat.eat(tiger);
+    bat.eat(ant);
     bat.move();
   }
 }

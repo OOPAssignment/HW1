@@ -1,6 +1,6 @@
 package com.HW1;
 
-public class Bat extends Creature implements Flyer{
+public class Bat extends Creature implements Flyer, Eater{
   private String name;
 
   public Bat(String name) {
@@ -19,10 +19,12 @@ public class Bat extends Creature implements Flyer{
   }
 
   @Override
-  public void doEat(Thing thing) {
-    if (thing instanceof Creature)
-      super.doEat(thing);
-    else if (thing.getClass().equals(Thing.class))
-      System.out.println(name + " " + getClass().getSimpleName() + " won't eat a " + thing);
+  public void eat(Creature creature) {
+    super.doEat(creature);
+  }
+
+  @Override
+  public void eat(Thing thing) {
+    System.out.println(name + " " + getClass().getSimpleName() + " won't eat a " + thing);
   }
 }
