@@ -16,14 +16,20 @@ public class TestCreature {
     things.add(new Thing("Locomotive"));
     things.add(new Thing("Tick-Tock the Crocodile"));
     System.out.println("Things: ");
-    things.stream().forEach(System.out::println);
+
+    for (Thing thing : things) {
+      System.out.println(thing);
+    }
 
     ArrayList<Creature> creatures = new ArrayList<>();
 
     creatures.add(new Tiger("Pooh's Friend"));
     creatures.add(new Ant("Tick Tock"));
     System.out.println("Creatures: ");
-    creatures.stream().forEach(System.out::println);
+
+    for (Creature creature : creatures) {
+      System.out.println(creature);
+    }
 
     Thing thing = new Thing("Thing 1");
     Tiger tiger = new Tiger("Creature 1");
