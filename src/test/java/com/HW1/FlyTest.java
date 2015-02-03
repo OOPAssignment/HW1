@@ -23,7 +23,7 @@ public class FlyTest extends BaseTest {
     Thing thing = new Thing("thing 1");
     Fly fly = new Fly("Fly3");
     fly.eat(thing);
-    assertEquals("Fly3 has eaten a thing 1", out.toString().trim());
+    assertEquals("Fly3 has just eaten a thing 1", out.toString().trim());
   }
 
   @Test

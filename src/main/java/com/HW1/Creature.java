@@ -13,7 +13,7 @@ public abstract class Creature extends Thing {
 
   public void doEat(Thing thing) {
     this.thing = thing;
-    System.out.println(name + " has eaten a " + thing);
+    System.out.println(name + " has just eaten a " + thing);
   }
 
   public abstract void move();

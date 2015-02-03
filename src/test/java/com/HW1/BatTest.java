@@ -32,6 +32,6 @@ public class BatTest extends BaseTest {
     Tiger tiger = new Tiger("Tiger 1");
     Bat bat = new Bat("Bat1");
     bat.eat(tiger);
-    assertEquals("Bat1 has eaten a Tiger 1 Tiger", out.toString().trim());
+    assertEquals("Bat1 has just eaten a Tiger 1 Tiger", out.toString().trim());
   }
 }
